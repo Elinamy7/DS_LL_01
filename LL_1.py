@@ -23,8 +23,6 @@ class LinkedList:
         
 
     def middle_node(self):
-        if self_has_loop():
-            return None
         slow = self.head
         fast = slow.head
         while fast and fast.next:
